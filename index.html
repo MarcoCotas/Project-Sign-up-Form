@@ -4,27 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <img
-        class="image"
-        src="/images/theoffice.png"
-        alt="Miachel Scott filling a form, style Studios Gibhly"
-      />
+      <div class="images">
+        <img
+          class="image"
+          src="/images/theoffice.png"
+          alt="Miachel Scott filling a form, style Studios Gibhly"
+        />
+        <div class="logoContainer">
+          <div class="logoBackground" id="logoBackground"></div>
+          <img
+            class="logo"
+            id="logo"
+            src="images/odin-lined.png"
+            alt="The Odin Project
+          logo"
+          />
+        </div>
+      </div>
       <div class="main-content">
         <div class="top">
           <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            velit aliquam? Placeat enim laboriosam consectetur rem impedit
-            doloribus, facilis fugit ea adipisci sed debitis! Exercitationem sed
-            dolorum voluptatem aut omnis!
+            "Sometimes I start a form and I don’t even know where it’s going. I
+            just hope I find a field along the way." – Michael Scott doloribus,
+            facilis fugit ea adipisci sed debitis! Exercitationem sed dolorum
+            voluptatem aut omnis!
           </p>
-          <p class="text">Some call to action</p>
+          <h1 class="text">Join Scranton</p>
         </div>
         <div class="middle">
-          <form></form>
+          <form class="form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" placeholder="Michael" />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" placeholder="Scott" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="michael69@scranton.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="911" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Boobs12345" />
+              </div>
+              <div class="form-group">
+                <label for="password">Confirm :</label>
+                <input
+                  type="password"
+                  id="confirmassword"
+                  placeholder="Boobs12345"
+                />
+              </div>
+            </div>
+            <br />
+            <input class="submit" type="submit" />
+          </form>
         </div>
         <div class="bottom">
           <button>Create Account</button>
@@ -32,5 +92,6 @@
         </div>
       </div>
     </div>
+    <footer>© 2025 Marco Cotas</footer>
   </body>
 </html>
